@@ -1,1 +1,14 @@
-<p>page-edit-task works!</p>
+<!-- <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Navbar</span>
+  </nav>
+<button type="button" class="btn btn-primary">Modifier</button>
+ 
+  <button type="button" class="btn btn-danger">Supprimer</button> -->
+  
+  <div class="container" *ngIf='task'>
+    <app-form-task
+    [objTask]='task'
+    (submitted)='update($event)'
+    (deleted)='onDelete($event)'
+    ></app-form-task>
+   </div>

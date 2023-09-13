@@ -1,25 +1,39 @@
 {
-    "tasks": [
-     {
+  "tasks": [
+    {
       "id": 1,
       "name": "to_do_1",
       "state": "COMPLETED"
-     },
-     {
-        "id": 2,
-        "name": "to_do_2",
-        "state": "INPROGRESS"
-       },
-       {
-        "id": 3,
-        "name": "to_do_3",
-        "state": "INPROGRESS"
-       },
-       {
-        "id": 4,
-        "name": "to_do_4",
-        "state": "COMPLETED"
-       }
-    ]
-    
-   }
+    },
+    {
+      "state": "COMPLETED",
+      "id": 2,
+      "name": "to_do_2"
+    },
+    {
+      "state": "COMPLETED",
+      "id": 3,
+      "name": "to_do_3"
+    },
+    {
+      "state": "COMPLETED",
+      "id": 4,
+      "name": "to_do_4"
+    },
+    {
+      "id": 5,
+      "name": "test",
+      "state": "COMPLETED"
+    },
+    {
+      "state": "COMPLETED",
+      "name": "dd",
+      "id": 6
+    },
+    {
+      "state": "COMPLETED",
+      "name": "hhh",
+      "id": 7
+    }
+  ]
+}

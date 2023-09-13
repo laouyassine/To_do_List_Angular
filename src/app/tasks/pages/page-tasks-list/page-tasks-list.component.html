@@ -1,1 +1,34 @@
-<p>page-tasks-list works!</p>
+<app-search-bar (added)="onSearchBar($event)">search</app-search-bar>
+
+<div class="page-content page-container" id="page-content">
+    <div class="padding">
+        <div class="row container d-flex justify-content-center">
+            <div class="col-md-12">
+                <div class="card px-3">
+                    <div class="card-body">
+                        
+                        <div class="list-wrapper">
+                            <ul class="d-flex flex-column-reverse todo-list">
+                                <li *ngFor="let item of tab">
+                                    <div class="form-check"> <label class="form-check-label"> 
+                                      <input [checked]="isCompleted(item)" class="checkbox" type="checkbox" (change)="onChangedState(item,$event)"> 
+                                      {{ item.name }}
+                                      <i class="input-helper"></i></label>
+                                     </div>
+                                      <i class="remove mdi mdi-close-circle-outline"></i>
+                                      <button class="btn btn-primary" (click)="editTask(item)">Edit</button>
+
+                                </li>  
+                            </ul>
+                        </div>
+
+                        <!-- <p>Vous avez {{ count() }} choses à faire</p> -->
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
